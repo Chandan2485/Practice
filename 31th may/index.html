@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid {
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: 300px auto;
+            grid-template-rows: 100px 50px 75px 200px 200px 100px;
+            /* grid-auto-rows: 50px 1; */
+            /* grid-auto-columns: 50px; */
+            grid-gap: 10px;
+            /* grid-row-gap: 10px;
+            grid-column-gap: 50px; */
+            grid-template-areas:
+            "header header" 
+            "home libary"
+            "home video"
+            "history video" 
+            "subscri video" 
+            "footer footer";
+
+        }
+
+        .item {
+            border: 1px solid black;
+            background-color: rgb(53, 53, 190);
+            color: aliceblue;
+        }
+
+        .item1 {
+            grid-area:header;
+            font-size: 30px;
+        }
+
+        .item2 {
+            grid-area:home ;
+        }
+
+        .item3 {
+            grid-area: history;
+        }
+
+        .item4 {
+            grid-area:subscri;
+        }
+
+        .item5 {
+            grid-area: libary;
+        }
+
+        .item6 {
+            grid-area:video ;
+        }
+
+        .item7 {
+            grid-area: footer;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="item item1">header</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+            <div class="item item6">6</div>
+
+            <div class="item item7">7</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
