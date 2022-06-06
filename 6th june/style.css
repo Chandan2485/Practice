@@ -1,0 +1,78 @@
+.container{
+    height: 500px;
+    width: 900px;
+    /* border: 1px solid black; */
+    background: linear-gradient(
+        to bottom,
+        rgb(236, 76, 103) 0%,
+        rgb(236, 76, 103) 50%,
+        rgb(48, 224, 224) 50%,
+        rgb(48, 224, 224) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    height: 300px;
+    width: 500px;
+    /* border: 1px solid black; */
+    /* background-color: white; */
+    background: linear-gradient(
+        to bottom,
+        rgb(190, 211, 192) 0%,
+        rgb(190, 211, 192) 25%,
+        black 25%,
+        black 25.5%,
+        white 25.5%,
+        white 100%
+    );
+    border-radius: 10px;
+    box-shadow:0 0 10px ;
+    /* display: grid; */
+    /* justify-content: center; */
+    /* grid-auto-flow: row; */
+    text-align: center;
+}
+
+.profile>img{
+    /* margin: auto; */
+    height: 100px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
+    margin-top: 20px;
+}
+.profile>p{
+    margin-bottom: 0;
+
+}
+.profile>h2{
+    margin: 5px 0 13px 0;
+}
+.icon{
+    /* border: 1px solid black; */
+    display: grid;
+    justify-content: space-around;
+    grid-auto-flow: column;
+}
+.icon>i{
+    color: rgb(79, 168, 86);
+    font-size: 30px;
+    transition: 1000ms;
+}
+.icon>i:hover{
+    color:rgb(236, 76, 103) ;
+    cursor: progress;
+}
+.profile>button{
+    margin-top: 13PX;
+    font-size: 12px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(7, 131, 231);
+    color: white;
+    border-radius: 5px ;
+    letter-spacing: 2px;
+}
