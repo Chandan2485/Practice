@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.containar a{
+    color: black;
+    background-color: rgb(13, 245, 245);
+    display: block;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;text-decoration: none;
+}
+.containar ul{
+    list-style: none;
+    display: flex;
+}
+.sub1>li{
+    display: none;
+  
+}
+.containar li:hover .sub1>li{
+    display: block;
+   
+}
+.sub1{
+    display: flex;
+    flex-direction: column;
+}
+.sub1 li:hover .sub2>li{
+    display: block;
+    /* position: absolute; */
+}
+.sub2 li{
+    display: none;
+    /* position: relative; */
+}
+.sub2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 100%;
+   
+}
