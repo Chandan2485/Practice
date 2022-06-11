@@ -12,6 +12,9 @@
     font-size: 50px;
     color: white;
 }
+.logo p:hover{
+    color: red;
+}
 
 .logo>img{
     height: 70px;
@@ -42,14 +45,19 @@ nav ul li a i{
 }
 .account button{
     border: none;
-    background-color: #c727a7;
+    background-color: #ee5ad0;
     font-size: 15px;
     color: white;
     font-weight: bold;
     padding: 7px 10px;
-    margin: 0 4px;
+    margin: 0 10px;
     border-radius: 5px;
 }
+.account button:hover{
+    box-shadow: 0 0 30px white;
+
+}
+
 
 nav ul li a:hover{
     color: black;
